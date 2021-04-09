@@ -101,7 +101,7 @@
 
   .nav-sanite {
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 
   /* bootstrap override */
@@ -152,7 +152,7 @@
 
   .section-banner::before {
     content: '';
-    background-image: url('../assets/images/banner.jpg');
+    background-image: url('../assets/images/banner-1.jpg');
     background-size: cover;
     position: absolute;
     top: 0px;
