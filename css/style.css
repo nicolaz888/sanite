@@ -229,4 +229,15 @@
   /* .div-provider-sanite{
     padding-bottom: 0px;
   } */
+
+  .carousel-item {
+    height: 500px;
+  }
+
+  .carousel-caption {
+    bottom: 40% !important;
+    width: 30%;
+    left: auto !important;
+    margin-right: -42px;
+  }
 }
