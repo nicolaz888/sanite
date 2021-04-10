@@ -3,6 +3,10 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+  p {
+    text-align: justify;
+  }
+
   figure {
     overflow: hidden;
   }
@@ -94,24 +98,6 @@
     border-radius: 0%;
     border-color: #eae5e3;
   }
-
-  .text-float-right {
-    text-align: center;
-  }
-
-  .text-float-left {
-    text-align: center;
-  }
-
-  .p-side-sanite {
-    width: 100%;
-    text-align: justify;
-  }
-
-  .p-side-left-sanite {
-    width: 100%;
-    text-align: justify;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -142,52 +128,6 @@
   }
   /* end of banner */
 
-  /* start mission and vision */
-  .section-mision {
-    position: relative;
-    height: 750px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section-mision::before {
-    content: '';
-    background-image: url('../assets/images/containers.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.3;
-  }
-
-  .section-mision > div {
-    position: relative;
-  }
-  /* end of mission */
-
-  .p-side-sanite {
-    width: 60%;
-    text-align: start;
-  }
-
-  .p-side-left-sanite {
-    width: 60%;
-    text-align: end;
-  }
-
-  .text-float-right {
-    float: right;
-  }
-
-  .text-float-left {
-    text-align: left;
-  }
-
   .footer-sanite {
     padding-left: 160px;
     padding-right: 160px;
@@ -210,9 +150,23 @@
   }
 
   .carousel-caption {
-    bottom: 40% !important;
+    bottom: 20% !important;
     width: 30%;
     left: auto !important;
-    margin-right: -42px;
+    margin-right: -60px;
+  }
+
+  .parent-center-v-sanite {
+    position: relative;
+  }
+
+  .child-center-v-sanite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .section-mision {
+    padding: 0px 60px;
   }
 }
