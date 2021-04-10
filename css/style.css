@@ -1,28 +1,6 @@
-@font-face {
-  font-family: 'bebas';
-  font-style: normal;
-  font-weight: normal;
-  src: local('bebas'),
-    url('../assets/fonts/bebas_neue/BebasNeue-Regular.woff') format('woff');
-}
-
 @media screen and (min-width: 300px) {
-  body {
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  h1,
-  h2,
-  h3 {
-    font-family: bebas;
-  }
-
-  h1 {
-    font-size: 80px;
-  }
-
-  h2 {
-    font-size: 60px;
+  * {
+    font-family: 'Montserrat', sans-serif;
   }
 
   figure {
@@ -137,9 +115,6 @@
 }
 
 @media screen and (min-width: 800px) {
-  p {
-    font-size: 20px;
-  }
   /* start of banner */
   .section-banner {
     position: relative;
