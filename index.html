@@ -11,7 +11,7 @@
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- \font -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -32,9 +32,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue-sanite sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="./assets/images/sanite-logo-header.png" alt="" width="130" height="" class="d-inline-block align-text-top">
+            <img src="./assets/images/sanite-logo-header.png" alt="" width="150" height="" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,13 +42,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav-sanite">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
+                    <a id="nav-link-nosotros" class="nav-link active" aria-current="page" href="#">Nosotros &nbsp;&nbsp; |</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#section-providers">PROVEEDORES</a>
+                    <a class="nav-link active" href="#section-providers">Proveedores &nbsp;&nbsp; |</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#footer">CONTACTO</a>
+                    <a class="nav-link active" href="#section-mision">Medicover &nbsp;&nbsp; |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#section-mision">Catálogo &nbsp;&nbsp; |</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#footer">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -63,9 +69,12 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="./assets/images/banner-1.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <p style="text-shadow: 1px 1px 2px #000;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute
-                        iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <p style="text-align: center; color: var(--color-primary-sanite)">
+                        Producción, exportación y distribución
+                        de <span style="font-weight: 900;">dispositivos médicos y consumibles</span>,
+                        con precios competitivos
+                        y alcance global
+                    </p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -134,7 +143,168 @@
 
     </section>
 
-    <section id="section-mision" class="section-sanite section-mision py-5">
+    <section class="section-sanite">
+
+        <div class="row">
+
+            <div class="col-12 col-md-3">
+                <div class="catalogo-title-sanite parent-center-v-sanite">
+                    <h4 class="child-center-v-sanite" style="font-weight: 600;">
+                        Catálogo
+                    </h4>
+                </div>
+
+                <div class="catalogo-list-sanite">
+                    <hr>
+                    <div id="category-batas" class="parent-center-v-sanite catalogo-category">
+                        <p class="child-center-v-sanite">
+                            Batas, Vestidos y Delantales
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="category-kits" class="parent-center-v-sanite catalogo-category">
+                        <p class="child-center-v-sanite">
+                            Paquetes y Kits
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="category-accesorios" class="parent-center-v-sanite catalogo-category">
+                        <p class="child-center-v-sanite">
+                            Accesorios
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="category-guantes" class="parent-center-v-sanite catalogo-category">
+                        <p class="child-center-v-sanite">
+                            Guantes
+                        </p>
+                    </div>
+                    <hr>
+                    <div id="category-mascaras" class="parent-center-v-sanite catalogo-category">
+                        <p class="child-center-v-sanite">
+                            Máscaras
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+            <!-- batas -->
+            <div id="grid-category-batas" class="col-12 col-md-9 catalogo-grid-sanite">
+                <div class="row mb-5">
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/BATA-PACIENTE-SIN-MANGA.jpg" width="" alt="">
+                        <a href="">Bata Paciente sin Manga</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/BATA-PACIENTE-CON-MANGA.jpg" width="" alt="">
+                        <a href="">Bata Paciente con Manga</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/BATA-QUIRURGICA.jpg" width="" alt="">
+                        <a href="">Bata Quirúrgica Estéril y No Estéril</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/BATA-QUIRURGICA-LAMINADA-LIZA.jpg" width="" alt="">
+                        <a href="">Bata Quirúrgica Laminada</a>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/BATA-ODONTOLOGO-CON-CREMALLERA.jpg" width="" alt="">
+                        <a href="">Bata Odontólogo Con Cremallera</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/VESTIDO-MEDICO-QUIRURGICO.jpg" width="" alt="">
+                        <a href="">Vestido Médico Quirúrgico</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/Delanta-impermeable-TEMP- (2).jpg" width="" alt="">
+                        <a href="">Delantal Impermeable Manga Larga</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/SABANA-RESORTADA.jpg" width="" alt="">
+                        <a href="">Sábana Resortada</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- kits -->
+            <div id="grid-category-kits" class="col-12 col-md-9 catalogo-grid-sanite" style="display: none;">
+                <div class="row mb-5">
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/kit-cirujano.png" width="" alt="">
+                        <a href="">Kit Cirujano Estéril</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/KIT-ABIERTO-LAPAROTOMIA.jpg" width="" alt="">
+                        <a href="">Kit Abierto Laparotomía Estéril</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- accesorios -->
+            <div id="grid-category-accesorios" class="col-12 col-md-9 catalogo-grid-sanite" style="display: none;">
+                <div class="row mb-5">
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/CAMPO-QX-ATO.jpg" width="" alt="">
+                        <a href="">Campo Quirúrgico</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/GORRO-CIRUJANO.jpg" width="" alt="">
+                        <a href="">Gorro Cirujano</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/GORRO-QUIRURGICO-AZUL.jpg" width="" alt="">
+                        <a href="">Gorro Tipo Oruga</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/BABERO-DESECHABLE.jpg" width="" alt="">
+                        <a href="">Babero Desechable</a>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/POLAINA-SMS.jpg" width="" alt="">
+                        <a href="">Polaina Cosida</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/POLAINAS-ANTI.jpg" width="" alt="">
+                        <a href="">Polaina Termosellada</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/TELA-SMS.jpg" width="" alt="">
+                        <a href="">Tela SMS</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- guantes -->
+            <div id="grid-category-guantes" class="col-12 col-md-9 catalogo-grid-sanite" style="display: none;">
+                <div class="row mb-5">
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/guante_quirurgico-latex_libretalco-400x400 (1).jpg" width="" alt="">
+                        <a href="">Guantes quirúrgico Bajo en Talco</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/guante_quirurgico-latex_bajotalco-420x420.jpg" width="" alt="">
+                        <a href="">Guantes quirúrgico Sin Talco</a>
+                    </div>
+                    <div>
+                        <img class="img-fluid" src="./assets/images/products/GUANTE-QUIRURGICO-ESTERIL-SIN-TALCO-MEDISPO-1-300x300.jpg" width="" alt="">
+                        <a href="">Guantes quirúrgico Sin en Talco</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="section-mision" class="section-sanite section-mision bg-white py-5">
         <div class="row py-3">
             <div class="col-12 col-md-6">
 
@@ -238,7 +408,30 @@
                         <input type="email" id="email" name="email" placeholder="Correo" required="" class="form-control" />
                     </div>
                     <div class="mb-3">
+                        <input type="text" id="celular" name="celular" placeholder="Celular" required="" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="empresa" name="empresa" placeholder="Empresa" required="" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="pais" name="pais" placeholder="País" required="" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required="" class="form-control" />
+                    </div>
+                    <div class="mb-3">
                         <textarea id="message" name="message" placeholder="Mensaje" required="" class="form-control"></textarea>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <input type="checkbox" id="autorizo" name="autorizo" placeholder="autorizo" required="true" class="" />
+                        <label for="autorizo">Autoriación tratamiento de datos personales</label>
+                    </div> -->
+                    <div class="mb-3">
+                        <label class="container">
+                            <p style="font-size: 16px;">Autorización tratamiento de datos personales</p>
+                            <input type="checkbox" required>
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
                     <button type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
                 </form>
@@ -262,13 +455,9 @@
     <!-- <a href="https://web.whatsapp.com/send?phone=573162480000" class="float" target="_blank">
         <i class="bi bi-whatsapp" style="font-size: 40px;"></i>
     </a> -->
-    <a href="https://wa.me/send?phone=573107835337" class="float" target="_blank">
+    <a href="https://wa.me/send?phone=573107835337" class="float" target="_blank" rel="noopener">
         <i class="bi bi-whatsapp" style="font-size: 40px;"></i>
     </a>
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/anchor-scroll-with-offset.js"></script> -->
 
 </body>
 

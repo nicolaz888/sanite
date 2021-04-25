@@ -1,6 +1,20 @@
+:root {
+  --color-primary-sanite: #225479;
+  --color-third-sanite: #b3e1e7;
+  --color-fifth-sanite: #691a53;
+}
+
 @media screen and (min-width: 300px) {
   * {
     font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    background-color: var(--color-primary-sanite);
+  }
+
+  footer {
+    scroll-margin-top: 4em;
   }
 
   html {
@@ -43,6 +57,7 @@
   .section-sanite {
     padding: 20px 30px 20px 30px;
     scroll-margin-top: 4em;
+    margin: 20px;
   }
 
   .footer-sanite {
@@ -50,7 +65,7 @@
     padding-right: 40px;
     padding-top: 30px;
     padding-bottom: 30px;
-    background-color: #225479;
+    background-color: var(--color-fifth-sanite);
     color: #eae5e3;
   }
 
@@ -70,16 +85,20 @@
 
   input[type='text'],
   input[type='text']:focus,
+  input[type='text']::placeholder,
   input[type='email'],
   input[type='email']:focus,
+  input[type='email']::placeholder,
   textarea.form-control,
+  textarea.form-control::placeholder,
   textarea.form-control:focus {
     background-color: transparent;
     color: #eae5e3;
     border-top: none;
     border-left: none;
+    border-right: none;
     border-radius: 0%;
-    border-color: gray;
+    border-color: #eae5e3;
   }
 
   .a-no-color-sanite {
@@ -103,6 +122,89 @@
     border-radius: 0%;
     border-color: #eae5e3;
   }
+
+  .nav-link {
+    color: var(--color-third-sanite) !important;
+    font-weight: 600;
+  }
+
+  .bg-blue-sanite {
+    background-color: var(--color-primary-sanite);
+  }
+
+  .nav-item {
+    /* border-right: 1.5px solid var(--color-third-sanite); */
+  }
+
+  /*start checkbox*/
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    background-color: transparent;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /*end checkbox*/
 }
 
 @media screen and (min-width: 800px) {
@@ -124,12 +226,13 @@
   }
 
   .carousel-caption {
-    bottom: 20% !important;
+    bottom: 60% !important;
     width: 30%;
     left: auto !important;
     margin-right: -60px;
   }
 
+  /* start vertical center*/
   .parent-center-v-sanite {
     position: relative;
   }
@@ -139,6 +242,7 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  /* end vertical center*/
 
   .section-mision {
     padding: 0px 60px;
@@ -151,9 +255,64 @@
   .splide__track {
     width: 90%;
     margin: 0 auto;
+    background-color: white;
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; */
+    padding: 20px;
+    border-right: 20px solid white;
   }
 
   .bg-light {
     background-color: #eeeeee !important;
+  }
+
+  .catalogo-title-sanite {
+    background-color: var(--color-third-sanite);
+    height: 70px;
+    padding-left: 30px;
+  }
+
+  .catalogo-list-sanite {
+    background-color: var(--color-third-sanite);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .catalogo-list-sanite div {
+    padding-left: 10px;
+    height: 40px;
+  }
+  .catalogo-list-sanite div p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .catalogo-list-sanite div:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .catalogo-grid-sanite {
+    background-color: white;
+    padding-top: 18px;
+  }
+
+  /* .catalogo-grid-sanite > div {
+    border: 1px solid red;
+  } */
+
+  .catalogo-grid-sanite div div {
+    width: 25%;
+    text-align: center;
+  }
+
+  .catalogo-grid-sanite div div img {
+    width: 90%;
+  }
+
+  .catalogo-grid-sanite div div a {
+    font-size: 14px;
+    font-weight: 600;
   }
 }
