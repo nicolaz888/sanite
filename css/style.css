@@ -125,7 +125,7 @@
 
   .nav-link {
     color: var(--color-third-sanite) !important;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
 
   .bg-blue-sanite {
@@ -143,7 +143,6 @@
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -172,12 +171,12 @@
 
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: var(--color-primary-sanite);
   }
 
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: #2196f3;
+    background-color: var(--color-primary-sanite);
   }
 
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -205,6 +204,24 @@
     transform: rotate(45deg);
   }
   /*end checkbox*/
+
+  /*------------------------------*/
+  /*PRODUCT*/
+  /*------------------------------*/
+  .product-main-sanite {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+  }
+  /* } */
+
+  .product-main-sanite > div > div > h1 {
+    font-weight: bold;
+  }
+
+  .product-main-sanite * {
+    color: var(--color-primary-sanite);
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -284,8 +301,7 @@
     height: 40px;
   }
   .catalogo-list-sanite div p {
-    font-size: 14px;
-    font-weight: 600;
+    /* font-weight: 600; */
   }
 
   .catalogo-list-sanite div:hover {
@@ -314,5 +330,11 @@
   .catalogo-grid-sanite div div a {
     font-size: 14px;
     font-weight: 600;
+    color: var(--color-primary-sanite);
+  }
+
+  #section-providers {
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
   }
 }
