@@ -293,6 +293,7 @@
 
   .catalogo-title-sanite {
     background-color: var(--color-third-sanite);
+    color: var(--color-primary-sanite);
     height: 70px;
     padding-left: 30px;
   }
