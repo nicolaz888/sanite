@@ -296,9 +296,10 @@
     height: 70px;
     padding-left: 30px;
   }
-
+  
   .catalogo-list-sanite {
     background-color: var(--color-third-sanite);
+    color: var(--color-primary-sanite);
     padding-left: 20px;
     padding-right: 20px;
   }
