@@ -11,6 +11,7 @@
 
   body {
     background-color: var(--color-primary-sanite);
+    position: relative;
   }
 
   footer {
@@ -133,6 +134,11 @@
   .nav-link {
     color: var(--color-third-sanite) !important;
     /* font-weight: 600; */
+  }
+
+  .active {
+    color: var(--color-third-sanite) !important;
+    font-weight: bold !important;
   }
 
   .bg-blue-sanite {
