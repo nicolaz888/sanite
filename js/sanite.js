@@ -1,5 +1,5 @@
 
-const arrCategories = ['grid-category-kits', 'grid-category-batas', 'grid-category-accesorios', 'grid-category-guantes']
+const arrCategories = ['grid-category-kits', 'grid-category-batas', 'grid-category-accesorios', 'grid-category-guantes', 'grid-category-mascaras']
 
 /**
  * Function to hide the navbar-collapse or burger menu when clicked

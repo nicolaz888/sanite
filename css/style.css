@@ -30,6 +30,12 @@
     overflow: hidden;
   }
 
+  .p-intro-sanite {
+    text-align: justify;
+    color: var(--color-primary-sanite);
+    font-size: 18px;
+  }
+
   .img-hover-sanite {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -214,6 +220,52 @@
   }
   /*end checkbox*/
 
+  /*catalog*/
+  .catalogo-title-sanite {
+    background-color: var(--color-third-sanite);
+    color: var(--color-primary-sanite);
+    height: 70px;
+    padding-left: 30px;
+  }
+
+  .catalogo-list-sanite {
+    background-color: var(--color-third-sanite);
+    color: var(--color-primary-sanite);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .catalogo-list-sanite div {
+    padding-left: 10px;
+    height: 40px;
+  }
+
+  .catalogo-list-sanite div:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .catalogo-grid-sanite {
+    background-color: white;
+    padding-top: 18px;
+  }
+
+  .catalogo-grid-sanite div div {
+    width: 25%;
+    text-align: center;
+  }
+
+  .catalogo-grid-sanite div div img {
+    width: 90%;
+  }
+
+  .catalogo-grid-sanite div div a {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-primary-sanite);
+  }
+  /*end of catalog*/
+
   /*------------------------------*/
   /*PRODUCT*/
   /*------------------------------*/
@@ -239,12 +291,25 @@
   .product-main-sanite * {
     color: var(--color-primary-sanite);
   }
+
+  /* start vertical center*/
+  .parent-center-v-sanite {
+    position: relative;
+  }
+
+  .child-center-v-sanite {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* end vertical center*/
+
   /*------------------------------*/
   /* END PRODUCT*/
   /*------------------------------*/
 
   .div-quienes-somos-title-sanite {
-    width: 60%;
+    width: 100%;
     border-bottom: 8px solid black;
     border-right: 8px solid black;
   }
@@ -257,7 +322,7 @@
   }
 
   .div-quienes-somos-content-sanite {
-    width: 60%;
+    width: 100%;
     color: white;
     font-style: italic;
   }
@@ -307,18 +372,6 @@
     margin-right: -60px;
   }
 
-  /* start vertical center*/
-  .parent-center-v-sanite {
-    position: relative;
-  }
-
-  .child-center-v-sanite {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  /* end vertical center*/
-
   .section-mision {
     padding: 0px 60px;
   }
@@ -342,52 +395,24 @@
     background-color: #eeeeee !important;
   }
 
-  .catalogo-title-sanite {
-    background-color: var(--color-third-sanite);
-    color: var(--color-primary-sanite);
-    height: 70px;
-    padding-left: 30px;
-  }
-
-  .catalogo-list-sanite {
-    background-color: var(--color-third-sanite);
-    color: var(--color-primary-sanite);
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .catalogo-list-sanite div {
-    padding-left: 10px;
-    height: 40px;
-  }
-
-  .catalogo-list-sanite div:hover {
-    background-color: white;
-    cursor: pointer;
-  }
-
-  .catalogo-grid-sanite {
-    background-color: white;
-    padding-top: 18px;
-  }
-
-  .catalogo-grid-sanite div div {
-    width: 25%;
-    text-align: center;
-  }
-
-  .catalogo-grid-sanite div div img {
-    width: 90%;
-  }
-
-  .catalogo-grid-sanite div div a {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--color-primary-sanite);
-  }
-
   #section-providers {
     border-bottom: 10px solid black;
     border-right: 10px solid black;
+  }
+
+  .logo-footer-sanite {
+    margin-top: -182px;
+  }
+
+  .div-quienes-somos-content-sanite {
+    width: 60%;
+  }
+
+  .div-quienes-somos-title-sanite {
+    width: 60%;
+  }
+
+  .p-intro-sanite {
+    text-align: center;
   }
 }
