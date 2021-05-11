@@ -223,8 +223,17 @@
     padding: 20px;
   }
 
-  .product-main-sanite > div > div > h1 {
+  .product-main-sanite h1 {
     font-weight: bold;
+  }
+
+  .product-main-sanite > div > div > div > p {
+    font-style: italic;
+  }
+
+  .product-main-sanite > div > div > div {
+    line-height: 6px;
+    width: 60%;
   }
 
   .product-main-sanite * {
@@ -247,10 +256,6 @@
     margin-bottom: 6px;
   }
 
-  .div-quienes-somos-title-sanite > p {
-    /* text-align: center; */
-  }
-
   .div-quienes-somos-content-sanite {
     width: 60%;
     color: white;
@@ -265,6 +270,15 @@
 
   .button-catalogo-sanite > a {
     color: var(--color-primary-sanite);
+  }
+
+  .pill-badge-sanite {
+    color: white;
+    font-style: italic;
+    background-color: var(--color-primary-sanite);
+    width: fit-content;
+    padding: 10px 40px;
+    border-radius: 30px;
   }
 }
 
