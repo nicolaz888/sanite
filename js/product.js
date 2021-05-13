@@ -316,6 +316,23 @@ const products = [
         esDesechable: true,
         mensajeDimensiones: 'Las dimensiones, presentación y especificaciones técnicas del producto pueden ser ajustadas de acuerdo con la necesidad del cliente',
         presentacion: 'Rollo',
+    },
+    {
+        no: 18,
+        ref: 'P1',
+        id: 'guantes-esteriles',
+        name: 'Guantes Estériles',
+        image: './assets/images/products/TELA-SMS.jpg',
+        description: 'Tela SMS - tela antifluido no tejida.',
+        talla: 'ÚNICA',
+        ancho: '1 o 2 m',
+        calibre: '30g',
+        tela: 'sms',
+        vidaProductiva: '5 años',
+        almacenamiento: 'Manténgase en lugar limpio, fresco y seco',
+        esDesechable: true,
+        mensajeDimensiones: 'Las dimensiones, presentación y especificaciones técnicas del producto pueden ser ajustadas de acuerdo con la necesidad del cliente',
+        presentacion: 'Rollo',
     }
 ];
 

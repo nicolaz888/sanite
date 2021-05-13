@@ -18,6 +18,11 @@
     scroll-margin-top: 4em;
   }
 
+  h2,
+  h4 {
+    font-weight: 600;
+  }
+
   html {
     scroll-behavior: smooth;
   }
@@ -245,6 +250,10 @@
     cursor: pointer;
   }
 
+  .catalogo-category > p {
+    font-weight: 600;
+  }
+
   .catalogo-grid-sanite {
     background-color: white;
     padding-top: 18px;
@@ -319,6 +328,7 @@
     font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 6px;
+    font-weight: 600;
   }
 
   .div-quienes-somos-content-sanite {
