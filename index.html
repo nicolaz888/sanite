@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <script src="./js/splide.js"></script>
-    <script src="./js/sanite.js"></script>
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -42,19 +41,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav nav-sanite">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section-nosotros">Nosotros &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
+                    <a id="a-home" class="nav-link" href="#section-nosotros">Nosotros &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section-quienes-somos">Quiénes Somos &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
+                    <a id="a-who-we-are" class="nav-link" href="#section-quienes-somos">Quiénes Somos &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section-catalogo">Medcover &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
+                    <a id="a-medcover" class="nav-link" href="#section-catalogo">Medcover &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#section-providers">Proveedores &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
+                    <a id="a-clientes-and-vendors" class="nav-link" href="#section-providers">Proveedores &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#footer">Contacto</a>
+                    <a id="a-contact" class="nav-link" href="#footer">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -64,7 +63,7 @@
 
         <div style="width: 40%; float: right; margin-top: 100px; margin-right: 35px;">
 
-            <p class="p-intro-sanite">
+            <p class="p-intro-sanite" id="intro-sanite">
                 Producción, exportación y distribución
                 de <span style="font-weight: 900;">dispositivos médicos y consumibles</span>,
                 con precios competitivos
@@ -85,7 +84,7 @@
                     <p>¿QUIÉNES SOMOS?</p>
                 </div>
                 <div class="div-quienes-somos-content-sanite">
-                    <p>
+                    <p id="p-who-we-are">
                         SANITE es una empresa dedicada a
                         la producción, importación,
                         distribución y suministro de
@@ -104,7 +103,7 @@
         <div class="row">
             <div class="col-12 col-md-5">
                 <button class="button-catalogo-sanite">
-                    <a href="#section-catalogo">Ver Catálogo</a>
+                    <a id="a-ver-catalogo" href="#section-catalogo">Ver Catálogo</a>
                 </button>
 
             </div>
@@ -119,7 +118,7 @@
 
             <div class="col-12 col-md-3">
                 <div class="catalogo-title-sanite parent-center-v-sanite">
-                    <h4 class="child-center-v-sanite">
+                    <h4 id="h-catalogo" class="child-center-v-sanite">
                         Catálogo
                     </h4>
                 </div>
@@ -127,31 +126,31 @@
                 <div class="catalogo-list-sanite">
                     <hr>
                     <div id="category-batas" class="parent-center-v-sanite catalogo-category">
-                        <p class="child-center-v-sanite" style="text-align: start;word-spacing: 16px;">
+                        <p id="category-batas-vestidos-delantales" class="child-center-v-sanite" style="text-align: start;word-spacing: 16px;">
                             Batas, Vestidos y Delantales
                         </p>
                     </div>
                     <hr>
                     <div id="category-kits" class="parent-center-v-sanite catalogo-category">
-                        <p class="child-center-v-sanite">
+                        <p id="category-paquetes-y-kits" class="child-center-v-sanite">
                             Paquetes y Kits
                         </p>
                     </div>
                     <hr>
                     <div id="category-accesorios" class="parent-center-v-sanite catalogo-category">
-                        <p class="child-center-v-sanite">
+                        <p id="category-accesorios" class="child-center-v-sanite">
                             Accesorios
                         </p>
                     </div>
                     <hr>
                     <div id="category-guantes" class="parent-center-v-sanite catalogo-category">
-                        <p class="child-center-v-sanite">
+                        <p id="category-guantes" class="child-center-v-sanite">
                             Guantes
                         </p>
                     </div>
                     <hr>
                     <div id="category-mascaras" class="parent-center-v-sanite catalogo-category">
-                        <p class="child-center-v-sanite">
+                        <p id="category-mascaras" class="child-center-v-sanite">
                             Máscaras
                         </p>
                     </div>
@@ -339,7 +338,7 @@
     <section id="section-providers" class="section-sanite bg-light py-5">
 
         <div class="col-12 text-center mb-5" style="font-weight: 700; color: var(--color-primary-sanite)">
-            <h2>PROVEEDORES Y CLIENTES</h2>
+            <h2 id="h-proveedores-clientes">PROVEEDORES Y CLIENTES</h2>
         </div>
 
         <div class="splide">
@@ -411,20 +410,20 @@
         <div class="row py-3">
 
             <div class="col-12 col-md-6">
-                <div style="width: fit-content;">
-                    <h5>INFORMACIÓN DE CONTACTO</h5>
+                <div style="width: fit-content">
+                    <h5 id="h-informacion-contacto">INFORMACIÓN DE CONTACTO</h5>
                     <hr>
                 </div>
                 <h6>Sanite S.A.S</h6>
                 <h6>NIT: 901382545-9</h6>
-                <h6>Dirección: Av Carrera 19 #100-45 ; Of 10124</h6>
-                <h6>Teléfono: (+57)-310-783-5337</h6>
-                <h6>Correo: info@sanite.co</h6>
+                <h6 id="h-direccion">Dirección: Av Carrera 19 #100-45 ; Of 10124</h6>
+                <h6 id="h-telefono">Teléfono: (+57)-310-783-5337</h6>
+                <h6 id="h-correo">Correo: info@sanite.co</h6>
             </div>
 
             <div class="col-12 col-md-6">
                 <div style="width: fit-content;">
-                    <h5>CONTACTO</h5>
+                    <h5 id="h-contacto">CONTACTO</h5>
                     <hr>
                 </div>
                 <form action="https://submit-form.com/NtX7cHip">
@@ -454,9 +453,9 @@
                             <input type="checkbox" required>
                             <span class="checkmark"></span>
                         </label>
-                        <p style="margin-left: 24px">Autorización <a style="color: var(--color-third-sanite);" target="_blank" href="./assets/documents/210419-politica-de-tratamiento-de-datos-sanite.pdf"> tratamiento de datos personales</a></p>
+                        <p id="autorizacion" style="margin-left: 24px">Autorización <a style="color: var(--color-third-sanite);" target="_blank" href="./assets/documents/210419-politica-de-tratamiento-de-datos-sanite.pdf"> tratamiento de datos personales</a></p>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
+                    <button id="enviar" type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
                 </form>
             </div>
 
@@ -481,6 +480,8 @@
     <a href="https://wa.me/send?phone=573107835337" class="float" target="_blank" rel="noopener">
         <i class="bi bi-whatsapp" style="font-size: 40px;"></i>
     </a>
+
+    <script src="./js/sanite.js"></script>
 
 </body>
 

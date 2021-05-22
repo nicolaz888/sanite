@@ -1,9 +1,11 @@
+const isLangEn = lang.includes('en');
+
 const products = [
     {
         no: 1,
         ref: 'RQ1',
         id: 'bata-paciente-sin-manga',
-        name: 'Bata Paciente Sin Manga',
+        name: isLangEn ? 'Batita' : 'Bata Paciente Sin Manga',
         image: './assets/images/products/BATA-PACIENTE-SIN-MANGA.jpg',
         description: 'Bata desechable paciente adulto elaborada en tela sms antifluido sin mangas, con dos tiras de amarre.',
         talla: 'ÚNICA',
