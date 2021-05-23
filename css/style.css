@@ -68,11 +68,12 @@
 
   .section-sanite {
     padding: 20px 30px 20px 30px;
-    scroll-margin-top: 4em;
     margin: 20px;
+    scroll-margin-top: 6em;
   }
 
   .section-banner-sanite {
+    scroll-margin-top: 6em;
     background-image: url('../assets/images/banner-1.jpg');
     background-size: cover;
     background-position: top right;
@@ -246,7 +247,7 @@
   }
 
   .catalogo-list-sanite div:hover {
-    background-color: white;
+    /* background-color: white; */
     cursor: pointer;
   }
 
