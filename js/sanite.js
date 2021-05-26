@@ -325,19 +325,180 @@ const products = [
         no: 18,
         ref: 'P1',
         id: 'guantes-esteriles',
-        name: 'Guantes Estériles',
+        name: isLangEn ? 'Sterile Gloves' : 'Guantes Estériles',
+        subProducts: [
+            {
+                name: 'Alfa Safe',
+                description: isLangEn ? 'Low Powder Surgical Gloves' : 'Guantes quirúrgico Bajo en Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 1-100.jpg',
+            },
+            {
+                name: 'Alfa Safe',
+                description: isLangEn ? 'Powder free Surgical Gloves' : 'Guantes quirúrgico Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 41-100.jpg',
+            },
+            {
+                name: 'Medispo',
+                description: isLangEn ? 'Powder free Surgical Gloves' : 'Guantes quirúrgico Sin en Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 42-100.jpg',
+            },
+            {
+                name: 'Supreme',
+                description: isLangEn ? 'Sterile Surgical Gloves' : 'Guante quirúrgico Esteril',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 43-100.jpg',
+            },
+            {
+                name: 'Well',
+                description: isLangEn ? 'Sterile Surgical Gloves' : 'Guantes quirúrgico Estériles',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 44-100.jpg',
+            },
+            {
+                name: 'Well',
+                description: isLangEn ? 'Powder free Surgical Gloves' : 'Guantes quirúrgico Estériles',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 45-100.jpg',
+            },
+            {
+                name: 'M&H Care',
+                description: isLangEn ? 'Low Powder Surgical Gloves' : 'Guantes quirúrgico bajo en Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 46-100.jpg',
+            },
+            {
+                name: 'M&H Care',
+                description: isLangEn ? 'Powder free Surgical Gloves' : 'Guantes quirúrgico Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 47-100.jpg',
+            }
+        ]
     },
     {
         no: 19,
         ref: 'P2',
         id: 'guantes-de-latex',
-        name: 'Guantes de Látex',
+        name: isLangEn ? 'Latex Gloves' : 'Guantes de Látex',
+        subProducts: [
+            {
+                name: 'Alfa Safe',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 2-100.jpg',
+            },
+            {
+                name: 'Alfa Safe',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 3-100.jpg',
+            },
+            {
+                name: 'Biofit',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 4-100.jpg',
+            },
+            {
+                name: 'Precision Care',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 5-100.jpg',
+            },
+            {
+                name: 'Dura Glove',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 6-100.jpg',
+            },
+            {
+                name: 'Nipro',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 7-100.jpg',
+            },
+            {
+                name: 'M&H Care',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 8-100.jpg',
+            },
+            {
+                name: 'Ukaint',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 9-100.jpg',
+            },
+            {
+                name: 'Examtex',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 10-100.jpg',
+            }
+            ,
+            {
+                name: 'Examtex',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 11-100.jpg',
+            }
+            ,
+            {
+                name: 'Maxter',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 12-100.jpg',
+            }
+            ,
+            {
+                name: 'Well',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 13-100.jpg',
+            }
+            ,
+            {
+                name: 'Precision Care',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 14-100.jpg',
+            }
+            ,
+            {
+                name: 'Otal',
+                description: isLangEn ? 'Latex gloves with powder' : 'Guantes de látex Con Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 15-100.jpg',
+            }
+        ]
     },
     {
         no: 20,
         ref: 'P3',
         id: 'guantes-de-nitrilo',
-        name: 'Guantes de Nitrilo',
+        name: isLangEn ? 'Nitrile Gloves' : 'Guantes de Nitrilo',
+        subProducts: [
+            {
+                name: 'SmartGuard',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 16-100.jpg',
+            },
+            {
+                name: 'Dura Glove',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 17-100.jpg',
+            },
+            {
+                name: 'Nipro',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 18-100.jpg',
+            },
+            {
+                name: 'Protexion',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 35-100.jpg',
+            },
+            {
+                name: 'M&H Care',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 19-100.jpg',
+            },
+            {
+                name: 'Ukaint',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 20-100.jpg',
+            },
+            {
+                name: 'Alfa Safe',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 21-100.jpg',
+            },
+            {
+                name: 'Well',
+                description: isLangEn ? 'Powder Free Nitrile Gloves' : 'Guantes de Nitrilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 22-100.jpg',
+            }
+        ]
     }
 ];
 
