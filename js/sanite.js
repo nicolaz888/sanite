@@ -1,6 +1,27 @@
 const lang = navigator.language || navigator.userLanguage;
 
-const isLangEn = lang.includes('en');
+let idioma = localStorage.getItem('saniteLang') || 'es';
+
+let isLangEn = idioma === 'en';
+
+changeLanguage = () => {
+
+    if (idioma) {
+
+        if (idioma === 'en') {
+            localStorage.setItem('saniteLang', 'es');
+        }
+        else {
+            localStorage.setItem('saniteLang', 'en');
+        }
+    }
+    else {
+        localStorage.setItem('saniteLang', 'es');
+    }
+
+    location.reload();
+
+}
 
 const products = [
     {
@@ -533,12 +554,12 @@ function hideCategories() {
     }
 }
 
-if (lang.includes('en')) {
+if (isLangEn) {
 
     document.getElementById('a-home').innerHTML = 'Home &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span>'
     document.getElementById('a-who-we-are').innerHTML = 'Who We Are &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span>'
     document.getElementById('a-clientes-and-vendors').innerHTML = 'Vendors &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span>'
-    document.getElementById('a-contact').innerHTML = 'Contact &nbsp;&nbsp; <span style="font-weight: normal !important;">|</span>'
+    document.getElementById('a-contact').innerHTML = 'Contact'
 
     document.getElementById('h-informacion-contacto').textContent = 'CONTACT INFORMATION'
     document.getElementById('h-direccion').textContent = 'Address: Av Carrera 19 #100-45 ; Of 10124'
