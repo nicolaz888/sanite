@@ -11,7 +11,7 @@ if (urlParams) {
 
         if (product) {
 
-            const isFirstTypeCategory = !productParam.includes('guantes');
+            const isFirstTypeCategory = !productParam.includes('guantes') && !productParam.includes('tapabocas') && !productParam.includes('mascaras');
 
             if (isFirstTypeCategory) {
                 // h1

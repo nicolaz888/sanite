@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    let perPage = 4;
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        perPage = 1;
+    }
+
     new Splide('.splide',
         {
-            perPage: 4,
+            perPage: perPage,
             rewind: true,
             gap: 20,
             cover: true,

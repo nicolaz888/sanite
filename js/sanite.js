@@ -520,6 +520,90 @@ const products = [
                 image: './assets/images/products/300x/Guantes y tapabocasArtboard 22-100.jpg',
             }
         ]
+    },
+    {
+        no: 21,
+        ref: 'P4',
+        id: 'guantes-de-vinilo',
+        name: isLangEn ? 'Vinile Gloves' : 'Guantes de Vinilo',
+        subProducts: [
+            {
+                name: 'Biofit',
+                description: isLangEn ? 'Powder Free Vinile Gloves' : 'Guantes de Vinilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 23-100.jpg',
+            },
+            {
+                name: 'Dura Glove',
+                description: isLangEn ? 'Powder Free Vinile Gloves' : 'Guantes de Vinilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 24-100.jpg',
+            },
+            {
+                name: 'M&H Care',
+                description: isLangEn ? 'Powder Free Vinile Gloves' : 'Guantes de Vinilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 25-100.jpg',
+            },
+            {
+                name: 'Protexion',
+                description: isLangEn ? 'Powder Free Vinile Gloves' : 'Guantes de Vinilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 26-100.jpg',
+            },
+            {
+                name: 'Ukaint',
+                description: isLangEn ? 'Powder Free Vinile Gloves' : 'Guantes de Vinilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 27-100.jpg',
+            },
+            {
+                name: 'Well',
+                description: isLangEn ? 'Powder Free Vinile Gloves' : 'Guantes de Vinilo Sin Talco',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 28-100.jpg',
+            }
+        ]
+    },
+    {
+        no: 22,
+        ref: 'P3',
+        id: 'tapabocas',
+        name: isLangEn ? 'Surgical Masks' : 'Tapabocas',
+        subProducts: [
+            {
+                name: 'Kn95',
+                description: isLangEn ? 'Ref - P5' : 'Ref - P5',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 29-100.jpg',
+            },
+            {
+                name: 'N95',
+                description: isLangEn ? 'Ref - P5' : 'Ref - P6',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 30-100.jpg',
+            },
+            {
+                name: isLangEn ? 'Heat Sealed. Three folds and three layers' : 'Termosellado Tres pliegues Tres Capas',
+                description: isLangEn ? 'Reference - P7' : 'Reference - P7',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 31-100.jpg',
+            },
+            {
+                name: isLangEn ? 'Protective face shield' : 'Careta Protección',
+                description: isLangEn ? 'Ref - P10' : 'Ref - P10',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 32-100.jpg',
+            }
+        ]
+    },
+    {
+        no: 23,
+        ref: 'P3',
+        id: 'mascaras-3m',
+        name: isLangEn ? '3M Masks' : 'Máscaras 3M',
+        subProducts: [
+            {
+                name: '8210',
+                description: isLangEn ? 'Ref - P8' : 'Ref - P8',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 33-100.jpg',
+            },
+            {
+                name: 'N95',
+                description: isLangEn ? 'Ref - P9' : 'Ref - P9',
+                image: './assets/images/products/300x/Guantes y tapabocasArtboard 34-100.jpg',
+            }
+        ]
     }
 ];
 
