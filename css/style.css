@@ -35,6 +35,12 @@
     overflow: hidden;
   }
 
+  .div-intro-sanite {
+    padding-top: 250px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .p-intro-sanite {
     text-align: justify;
     color: var(--color-primary-sanite);
@@ -76,8 +82,8 @@
     scroll-margin-top: 6em;
     background-image: url('../assets/images/banner-1.jpg');
     background-size: cover;
-    background-position: top right;
-    height: 1000px;
+    background-position: center;
+    height: 400px;
   }
 
   .footer-sanite {
@@ -421,6 +427,22 @@
 
   .div-quienes-somos-title-sanite {
     width: 60%;
+  }
+
+  .section-banner-sanite {
+    scroll-margin-top: 6em;
+    background-image: url('../assets/images/banner-1.jpg');
+    background-size: cover;
+    background-position: top right;
+    height: 1000px;
+  }
+
+  .div-intro-sanite {
+    width: 40%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 35px;
+    padding-top: 0px;
   }
 
   .p-intro-sanite {
